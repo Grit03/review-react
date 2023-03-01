@@ -1,0 +1,6 @@
+/* 가운데 정렬되도록 */
+.main {
+  margin: 3rem auto;
+  width: 90%;
+  max-width: 40rem;
+}
