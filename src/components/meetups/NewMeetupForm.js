@@ -2,7 +2,7 @@ import { useRef } from "react";
 import Card from "../ui/Card";
 import classes from "./NewMeetupForm.module.css";
 
-function NewMeetupForm() {
+function NewMeetupForm({ onAddMeetup }) {
   // 강의에서는 null을 넣진 않았다.
   const titleInputRef = useRef(null);
   const imageInputRef = useRef(null);
@@ -25,6 +25,7 @@ function NewMeetupForm() {
       address: enteredAddress,
       description: enteredDescription,
     };
+    onAddMeetup(meetupData);
   }
 
   return (
